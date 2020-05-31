@@ -35,6 +35,7 @@ int main() {
     
     return 0;
 }
+
 int convertToBinary(int n, int i) {
     static int binary[10];
     
@@ -103,6 +104,9 @@ void calculate_the_maximum(int n, int k) {
           index++;            
         }
     }
+
+    for(int i=0; i<(n*(n-1)/2); i++)
+        printf("%d ",xorSet[i]);
 
     finalAns[0] = andSet[0];
     finalAns[1] = orSet[0];
